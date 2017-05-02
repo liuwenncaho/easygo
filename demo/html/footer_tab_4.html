@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+       <link rel="stylesheet" type="text/css" href="../css/api.css" />
+      <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+      <style>
+      
+    </style>
+</head>
+<body>
+    <div class="aui-content">
+    <div class="aui-card">
+    <ul class="aui-list-view">
+        <li class="aui-list-view-cell">
+            卡片式单行列表标题效果
+        </li>
+        <li class="aui-list-view-cell">
+            卡片式单行列表标题效果
+        </li>
+        <li class="aui-list-view-cell">
+            卡片式单行列表标题效果
+        </li>
+        <li class="aui-list-view-cell">
+            卡片式单行列表标题效果
+        </li>
+    </ul>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/aui-tab.js"></script>
+<script type="text/javascript" src="../script/aui-waterfall.js" ></script>
+<script type="text/javascript">
+$aui.waterfall($api.byId("aui-waterfall"),{
+    col:2,//列数
+    padding:10,//容器内边距
+    space:10//列间距
+});
+</script>
+<script type="text/javascript">
+    apiready = function(){
+        
+    };
+</script>
+</html>

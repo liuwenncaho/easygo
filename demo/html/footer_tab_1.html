@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+       <link rel="stylesheet" type="text/css" href="../css/api.css" />
+      <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+      <style>
+        body{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="aui-content">
+    <ul class="aui-waterfall" id="aui-waterfall"> 
+    <li>
+        <div class="aui-waterfall-header">
+            <img src="../image/demo1.png" />
+        </div>
+       <div class="aui-waterfall-body">
+            瀑布流的效果
+        </div>
+        <div class="aui-waterfall-footer"> 
+            <span class="aui-text-info">
+                流浪男
+            </span>
+            <span class="aui-pull-right">
+                <i class="aui-iconfont aui-icon-likefill aui-text-warning"></i>
+            </span>
+        </div>
+    </li>
+</ul>
+</div>
+</div>
+    
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/aui-tab.js"></script>
+<script type="text/javascript" src="../script/aui-waterfall.js" ></script>
+<script type="text/javascript">
+$aui.waterfall($api.byId("aui-waterfall"),{
+    col:2,//列数
+    padding:10,//容器内边距
+    space:10//列间距
+});
+</script>
+<script type="text/javascript">
+    apiready = function(){
+        
+    };
+</script>
+</html>
