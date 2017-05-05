@@ -44,7 +44,25 @@
 
 <script type="text/javascript">
     apiready = function(){
-        
+        api.ajax({
+        url: 'http://1.202.240.1:3101/thinkphp/home/index/insert',
+        method: 'post',
+        data: {
+            values: { 
+                name: 'haha'
+            },
+            files: { 
+                file: 'fs://a.gif'
+            }
+        }
+    },function(ret, err){
+        if (ret) {
+            alert( JSON.stringify( ret ) );
+        } else {
+            alert( JSON.stringify( err ) );
+        }
+    });
     };
+    
 </script>
 </html>
